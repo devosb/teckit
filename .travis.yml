@@ -33,6 +33,18 @@ jobs:
       script:
         - ./autogen.sh
         - ./build-mac-binaries.sh
+    - os: osx
+      name: "macOS-xcode10.3"
+      osx_image: "xcode10.3"
+      script:
+        - ./autogen.sh
+        - ./build-mac-binaries.sh
+    - os: osx
+      name: "macOS-xcode11"
+      osx_image: "xcode11"
+      script:
+        - ./autogen.sh
+        - ./build-mac-binaries.sh
 
 addons:
   apt:
